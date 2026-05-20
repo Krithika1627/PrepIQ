@@ -208,7 +208,7 @@ def analyze_confidence(answer_text: str) -> dict[str, Any]:
 
     # --- Sentiment analysis with TextBlob ---
     polarity = 0.0
-    subjectivity = 0.5
+
     try:
         from textblob import TextBlob
         blob = TextBlob(answer_text)

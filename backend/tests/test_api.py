@@ -13,8 +13,8 @@ os.environ["DATABASE_URL"] = f"sqlite:///{TEST_DB_PATH.as_posix()}"
 os.environ["APP_SECRET"] = "ci-test-secret"
 os.environ["CORS_ORIGINS"] = "http://localhost:8080,http://127.0.0.1:8080"
 
-from backend.app.main import app
-from fastapi.testclient import TestClient
+from backend.app.main import app  # noqa: E402
+from fastapi.testclient import TestClient  # noqa: E402
 
 
 class PrepIQApiTestCase(unittest.TestCase):
