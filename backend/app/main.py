@@ -83,7 +83,7 @@ OPENROUTER_TIMEOUT_SECONDS = float(os.getenv("OPENROUTER_TIMEOUT_SECONDS", "30")
 CORS_ORIGINS = [
     origin.strip()
     for origin in os.getenv(
-        "ALLOWED_ORIGINS", "http://localhost:8080,http://127.0.0.1:8080"
+        "CORS_ORIGINS", "http://localhost:8080,http://127.0.0.1:8080"
     ).split(",")
     if origin.strip()
 ]
